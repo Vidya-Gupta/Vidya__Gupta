@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register Page</title>
+<style>
+    body
+    {
+        
+            width: 100%;
+      height:100%;
+    }
+    body{
+        color: white;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    };
+    body{
+        font-family: cursive;
+        font-size:large;
+        text-align : center;
+    }
+    
+    nav ul{
+        border: 2px solid white;
+        padding: 1%;
+    }
+    
+    nav ul li{
+        list-style-type: none;
+        display: inline;
+        padding-left: 3%;
+        padding-right: 3%;
+       
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color:  black;
+        align-items: center;
+        
+    }
+    footer{
+        font-size: small;
+        color: white;
+        text-align: center;
+    }
+    </style>
+</head>
+<body style="text-align: center;">
+    <header>
+        <nav>
+            <ul>    
+                <li><a href="/art">Art & Craft</a></li>
+                <li><a href="/myschool">My school</a></li>
+                <li><a href="/recipebook">My Recipe</a></li>
+                <li><a href="/solarsystem">Our Planets</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/calculator">Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+<h1>Registration Page</h1>
+<p>Please fill in the details below to register.</p>
+<form action="/register_verify" method="POST">
+    <label for="firstname">First Name:*
+        <input type="text" id="firstname" name="firstname" required>
+    </label>
+    <br><br>
+    <label for="lastname">Last Name:*
+        <input type="text" id="lastname" name="lastname" required>
+    </label>
+    <br><br>
+    <label for="username">Username:*
+        <input type="text" id="username" name="userhtml" required>
+    </label>
+    <br><br>
+    <label for="password">Password:*
+        <input type="password" id="password" name="pwdhtml" required>
+    </label>
+    <br><br>
+    <label for="cpassword">Confirm Password:*
+        <input type="cpassword" id="cpassword" name="cpassword" required>
+    </label>
+    <br><br>
+    <label>
+        <p>Please select your Age group</p>
+        <form action="/register_verify" methods= "POST" >
+        <select id="age" name="age">Age group
+            <optgroup label="Age group <60">
+                <option>4-9yrs</option>
+                <option>10-18yrs</option>
+                <option>19-40yrs</option>
+                <option>41-60yrs</option>
+            </optgroup>
+            <optgroup ]
+            [
+            
+            label=">60">
+                <option>61-70yrs</option>
+                <option>71-80yrs</option>
+                <option>80+yrs</option>
+            </optgroup>
+        </select>
+    </label>
+    <br><br>
+    <label for="email">Email:
+        <input type="email" id="email" name="email">
+    </label>
+    <br><br>
+    <label for="phone">Phone Number:
+        <input type="tel" id="phone" name="phone">
+    </label>
+    <br><br>   
+    <label for="feedback">Feedback:
+        <textarea id="feedback" rows="4" cols="30"></textarea>
+    </label>
+    
+    <br><br>
+<p>Already Regsitered? <a href="login.html">Login Here</a></p>
+<button type="submit" id="submit" name="submit">Register</button>
+<button type="reset" id="reset" name="reset">Reset</button>
+
+
+
+
+</form>
+<br><br><br><br><br><br>
+<footer>
+    All rights Reserved©2021<br>
+    Ramya Technologies Pvt Ltd
+</footer>
+</body>
+</html>
